@@ -7,7 +7,7 @@ int main() {
     FILE *fp = fopen("map.txt", "r"); 
     
     
-    if (fp == NULL) {
+    if(fp == NULL) {
         printf("파일을 찾을 수 없습니다!\n");
         return 1;
     }
@@ -30,7 +30,7 @@ int main() {
         }
     }
    
-    for (int i = 0; i < m; i++) {
+    for(int i = 0; i < m; i++) {
         int u, v, cost;
         fscanf(fp, "%d %d %d", &u, &v, &cost);
         
